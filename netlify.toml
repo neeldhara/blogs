@@ -5,6 +5,177 @@
 
 # Rewrite rules for subdomain routing (preserves subdomain in location bar)
 # Note: These require domain aliases to be configured in Netlify dashboard
+
+# Static asset rewrites for all subdomains
+[[redirects]]
+  from = "https://art.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://art.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for bfs subdomain
+[[redirects]]
+  from = "https://bfs.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://bfs.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for dfs subdomain
+[[redirects]]
+  from = "https://dfs.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://dfs.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for problems subdomain
+[[redirects]]
+  from = "https://problems.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://problems.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for puzzles subdomain
+[[redirects]]
+  from = "https://puzzles.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://puzzles.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for reviews subdomain
+[[redirects]]
+  from = "https://reviews.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://reviews.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for reflections subdomain
+[[redirects]]
+  from = "https://reflections.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://reflections.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for vibes subdomain
+[[redirects]]
+  from = "https://vibes.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://vibes.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for workflows subdomain
+[[redirects]]
+  from = "https://workflows.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://workflows.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for magic subdomain
+[[redirects]]
+  from = "https://magic.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://magic.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for contests subdomain
+[[redirects]]
+  from = "https://contests.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://contests.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for poetry subdomain
+[[redirects]]
+  from = "https://poetry.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://poetry.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Asset rewrites for blog subdomain
+[[redirects]]
+  from = "https://blog.neeldhara.blog/_astro/*"
+  to = "/_astro/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://blog.neeldhara.blog/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Content rewrites
 [[redirects]]
   from = "https://art.neeldhara.blog/*"
   to = "/art/:splat"
