@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import { BlogPosts } from '@/components/sections/blog-posts';
+
+const posts = (await getCollection('magic')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const SITE_TITLE = 'Magic - Mathematical Card Tricks and Illusions';
+const SITE_DESCRIPTION = 'Self-working card tricks, mathematical principles in magic, and the beauty of algorithmic illusions.';
+---
+
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<div class="py-16 md:py-28 lg:py-32">
+		<div class="container max-w-5xl">
+			<div class="mb-12">
+				<h1 class="text-4xl font-bold mb-4">Magic</h1>
+				<p class="text-xl text-muted-foreground">{SITE_DESCRIPTION}</p>
+			</div>
+			<BlogPosts posts={posts} collection="magic" client:only='react' />
+		</div>
+	</div>
+</DefaultLayout>

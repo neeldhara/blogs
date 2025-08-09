@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import { BlogPosts } from '@/components/sections/blog-posts';
+
+const posts = (await getCollection('reflections')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const SITE_TITLE = 'Reflections - Thoughts on Teaching, Learning, and Life';
+const SITE_DESCRIPTION = 'Personal reflections on academia, teaching philosophy, and the journey of continuous learning.';
+---
+
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<div class="py-16 md:py-28 lg:py-32">
+		<div class="container max-w-5xl">
+			<div class="mb-12">
+				<h1 class="text-4xl font-bold mb-4">Reflections</h1>
+				<p class="text-xl text-muted-foreground">{SITE_DESCRIPTION}</p>
+			</div>
+			<BlogPosts posts={posts} collection="reflections" client:only='react' />
+		</div>
+	</div>
+</DefaultLayout>

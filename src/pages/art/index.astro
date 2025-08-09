@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import { BlogPosts } from '@/components/sections/blog-posts';
+
+const posts = (await getCollection('art')).sort(
+	(a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+
+const SITE_TITLE = 'Art	 - Visual Explorations in Computer Science';
+const SITE_DESCRIPTION = 'Algorithmic sketches, generative art, and visual representations of computer science concepts.';
+---
+
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<BlogPosts posts={posts} collection="art" client:only='react' />
+</DefaultLayout>
