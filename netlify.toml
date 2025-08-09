@@ -175,11 +175,51 @@
   status = 200
   force = true
 
+# Special redirects for global pages
+[[redirects]]
+  from = "https://art.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://art.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue (e.g. /art/art/slug → /art/slug)
+[[redirects]]
+  from = "https://art.neeldhara.blog/art/*"
+  to = "https://art.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 # Content rewrites
 [[redirects]]
   from = "https://art.neeldhara.blog/*"
   to = "/art/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - BFS
+[[redirects]]
+  from = "https://bfs.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bfs.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for BFS
+[[redirects]]
+  from = "https://bfs.neeldhara.blog/bfs/*"
+  to = "https://bfs.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 [[redirects]]
@@ -188,10 +228,50 @@
   status = 200
   force = true
 
+# Special redirects for global pages - DFS
+[[redirects]]
+  from = "https://dfs.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dfs.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for DFS
+[[redirects]]
+  from = "https://dfs.neeldhara.blog/dfs/*"
+  to = "https://dfs.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://dfs.neeldhara.blog/*"
   to = "/dfs/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - PROBLEMS
+[[redirects]]
+  from = "https://problems.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://problems.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for PROBLEMS
+[[redirects]]
+  from = "https://problems.neeldhara.blog/problems/*"
+  to = "https://problems.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 [[redirects]]
@@ -200,10 +280,50 @@
   status = 200
   force = true
 
+# Special redirects for global pages - PUZZLES
+[[redirects]]
+  from = "https://puzzles.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://puzzles.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for PUZZLES
+[[redirects]]
+  from = "https://puzzles.neeldhara.blog/puzzles/*"
+  to = "https://puzzles.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://puzzles.neeldhara.blog/*"
   to = "/puzzles/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - REVIEWS
+[[redirects]]
+  from = "https://reviews.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://reviews.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for REVIEWS
+[[redirects]]
+  from = "https://reviews.neeldhara.blog/reviews/*"
+  to = "https://reviews.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 [[redirects]]
@@ -212,10 +332,50 @@
   status = 200
   force = true
 
+# Special redirects for global pages - REFLECTIONS
+[[redirects]]
+  from = "https://reflections.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://reflections.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for REFLECTIONS
+[[redirects]]
+  from = "https://reflections.neeldhara.blog/reflections/*"
+  to = "https://reflections.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://reflections.neeldhara.blog/*"
   to = "/reflections/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - VIBES
+[[redirects]]
+  from = "https://vibes.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://vibes.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for VIBES
+[[redirects]]
+  from = "https://vibes.neeldhara.blog/vibes/*"
+  to = "https://vibes.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 [[redirects]]
@@ -224,10 +384,50 @@
   status = 200
   force = true
 
+# Special redirects for global pages - WORKFLOWS
+[[redirects]]
+  from = "https://workflows.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://workflows.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for WORKFLOWS
+[[redirects]]
+  from = "https://workflows.neeldhara.blog/workflows/*"
+  to = "https://workflows.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://workflows.neeldhara.blog/*"
   to = "/workflows/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - MAGIC
+[[redirects]]
+  from = "https://magic.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://magic.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for MAGIC
+[[redirects]]
+  from = "https://magic.neeldhara.blog/magic/*"
+  to = "https://magic.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 [[redirects]]
@@ -236,16 +436,76 @@
   status = 200
   force = true
 
+# Special redirects for global pages - CONTESTS
+[[redirects]]
+  from = "https://contests.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://contests.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for CONTESTS
+[[redirects]]
+  from = "https://contests.neeldhara.blog/contests/*"
+  to = "https://contests.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://contests.neeldhara.blog/*"
   to = "/contests/:splat"
   status = 200
   force = true
 
+# Special redirects for global pages - POETRY
+[[redirects]]
+  from = "https://poetry.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://poetry.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for POETRY
+[[redirects]]
+  from = "https://poetry.neeldhara.blog/poetry/*"
+  to = "https://poetry.neeldhara.blog/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://poetry.neeldhara.blog/*"
   to = "/poetry/:splat"
   status = 200
+  force = true
+
+# Special redirects for global pages - BLOG
+[[redirects]]
+  from = "https://blog.neeldhara.blog/latest"
+  to = "https://neeldhara.blog/latest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blog.neeldhara.blog/about"
+  to = "https://neeldhara.blog/about"
+  status = 301
+  force = true
+
+# Fix double-path issue for BLOG
+[[redirects]]
+  from = "https://blog.neeldhara.blog/blog/*"
+  to = "https://blog.neeldhara.blog/:splat"
+  status = 301
   force = true
 
 # Main blog redirect
