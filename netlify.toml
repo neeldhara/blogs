@@ -13,74 +13,74 @@
 
 [[redirects]]
   from = "https://bfs.neeldhara.blog/*"
-  to = "https://neeldhara.blog/bfs/:splat"
+  to = "/bfs/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://dfs.neeldhara.blog/*"
-  to = "https://neeldhara.blog/dfs/:splat"
+  to = "/dfs/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://problems.neeldhara.blog/*"
-  to = "https://neeldhara.blog/problems/:splat"
+  to = "/problems/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://puzzles.neeldhara.blog/*"
-  to = "https://neeldhara.blog/puzzles/:splat"
+  to = "/puzzles/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://reviews.neeldhara.blog/*"
-  to = "https://neeldhara.blog/reviews/:splat"
+  to = "/reviews/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://reflections.neeldhara.blog/*"
-  to = "https://neeldhara.blog/reflections/:splat"
+  to = "/reflections/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://vibes.neeldhara.blog/*"
-  to = "https://neeldhara.blog/vibes/:splat"
+  to = "/vibes/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://workflows.neeldhara.blog/*"
-  to = "https://neeldhara.blog/workflows/:splat"
+  to = "/workflows/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://magic.neeldhara.blog/*"
-  to = "https://neeldhara.blog/magic/:splat"
+  to = "/magic/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://contests.neeldhara.blog/*"
-  to = "https://neeldhara.blog/contests/:splat"
+  to = "/contests/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "https://poetry.neeldhara.blog/*"
-  to = "https://neeldhara.blog/poetry/:splat"
+  to = "/poetry/:splat"
   status = 200
   force = true
 
 # Main blog redirect
 [[redirects]]
   from = "https://blog.neeldhara.blog/*"
-  to = "https://neeldhara.blog/blog/:splat"
+  to = "/blog/:splat"
   status = 200
   force = true
 
