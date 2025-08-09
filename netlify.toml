@@ -4,87 +4,88 @@
   command = "npm run build"
 
 # Redirect rules for subdomain routing
+# Note: These require domain aliases to be configured in Netlify dashboard
 [[redirects]]
   from = "https://art.neeldhara.blog/*"
   to = "https://neeldhara.blog/art/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://bfs.neeldhara.blog/*"
   to = "https://neeldhara.blog/bfs/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://dfs.neeldhara.blog/*"
   to = "https://neeldhara.blog/dfs/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://problems.neeldhara.blog/*"
   to = "https://neeldhara.blog/problems/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://puzzles.neeldhara.blog/*"
   to = "https://neeldhara.blog/puzzles/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://reviews.neeldhara.blog/*"
   to = "https://neeldhara.blog/reviews/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://reflections.neeldhara.blog/*"
   to = "https://neeldhara.blog/reflections/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://vibes.neeldhara.blog/*"
   to = "https://neeldhara.blog/vibes/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://workflows.neeldhara.blog/*"
   to = "https://neeldhara.blog/workflows/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://magic.neeldhara.blog/*"
   to = "https://neeldhara.blog/magic/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://contests.neeldhara.blog/*"
   to = "https://neeldhara.blog/contests/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://poetry.neeldhara.blog/*"
   to = "https://neeldhara.blog/poetry/:splat"
-  status = 200
+  status = 301
   force = true
 
 # Main blog redirect
 [[redirects]]
   from = "https://blog.neeldhara.blog/*"
   to = "https://neeldhara.blog/blog/:splat"
-  status = 200
+  status = 301
   force = true
 
 # Fallback for main domain
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
+  status = 301
